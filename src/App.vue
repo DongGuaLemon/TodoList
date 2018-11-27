@@ -99,14 +99,9 @@ import navbar from './components/sidebar.vue'
         }
         if(this.showend==true){
           return this.items.filter(function(item,index,array){
-            if(item[0]!=""){
               return item.isFinished==true;
-            }
-            else{
-              return "已完成"
-            }
           });
-          }
+        }
         if(this.showing==true){
           return this.items.filter(function(item,index,array){
             return item.isFinished==false;
